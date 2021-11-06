@@ -1,164 +1,139 @@
-*{
-    margin:  0;
-    padding: 0;
-    box-sizing:border-box ;
-    
+body::before{
+    display: block;
+    content: '';
+    height: 65px;
+}
+
+@media(min-width: 768px){
+    .new-input{
+        width: 50%;
+        
+    }
+    .features-inner .btngroup-1{
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+.header{
+    padding: 0 45px;
+    background-color:#6e7399 ;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap ;
 }
 
 body{
-        font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: large;
+    
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 26px;
-}
-nav{
-    flex: 1;
-    text-align: right;
-}
-nav ul{
-    display: inline-block;
-    list-style-type: none;
-    margin-right: 20px;
-
-}
-
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
-
-}
-
-a{
+.btnitem1{
     text-decoration: none;
-    color: #555;
+    padding: 3px 6px;
+    border-radius: 8px;
+    font-size: 1.18rem;
+    display: inline-block
+    
+    
 }
-p{
-    color: #555;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
 
+.btn_1 .btn_1-1{
+    transition: all 0.8s ease-out;
 }
-.row  {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+
+.btnitem1:hover{
+   
+    transform: rotate(2deg);
+    color: #000;
 }
-.column{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.column img{
-    max-width: 100%;
-    padding: 50px 0;
-}
-.column h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 20px 0;
-}
+
+
+
 .btn{
-    display: inline-block;
-    background: #ff5235;
-    color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.18rem;
+    display: inline-block
+    
 }
-
 .btn:hover{
-    background: #563434;
-
-}
-.header{
-    background: radial-gradient(#fff,#ffd6d6);
-
+    color: #fff;
+    transform: translateY(5deg);
 }
 
-.header .row{
-    margin-top: 70px;
-}
-.categories{
-    margin: 70px 0;
+.features{
+    background-color: #e8eaf6;
+    padding: 60px 45px;
+   
 }
 
 
-.col-3{
-    flex-basis: 30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-
-}
-
-.col-3 img{
-    width: 100%;
-}
-.small-container{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-.col-4{
-    flex-basis: 20%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 20px;
-    transition: transform 0.5s;
-}
-
-.col-4 h4, p {
-    display: flex;
-    justify-content: center;
-}
-.col-4 h3{
-    display: flex;
-    height: 10;
-}
-
-.col-4 img{
-    width: 100%;
-}
-.title{
+.features h1{
     text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: rgb(41, 23, 70);
-}
-.title::after{
-    content: '';
-    background: #ff523b;
-    width: 200px;
-    height: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 40%;
-    transform: rotateX(-50%);
+    color:#283593 ;
 }
 
-.favorite  {
-    color: #ff5235;
-}
-.material-icons {
-    color: #ff5235;
+.features-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 45px;
+
 }
 
-.col-4:hover{
-    transform: translateY(-5px);
+.featured-item h3{
+    color: #283593;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
 }
-
-.copy p{
-    text-align: center;
+.featured-item p{
+    margin: 0;
+    line-height: 1.6;
     color: #333;
 }
 
+.footer{
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+    font-size: .9rem;
+    
+}
+
+
+.portfolio{
+    padding: 65px 45px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.btnitem1{
+    color: red;
+    text-align: center;
+}
+
+
+
+.img--1_1{
+    max-width: 150px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 45px;
+  
+}
